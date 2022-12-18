@@ -3,6 +3,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
+      "@paulrichez/ng-cursor": [
+        "dist/paulrichez/ng-cursor"
+      ],
       "@paulrichez/ng-gallery-inline": [
         "dist/paulrichez/ng-gallery-inline"
       ]
