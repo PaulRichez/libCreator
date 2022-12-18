@@ -1,0 +1,16 @@
+<div class="gallery-inline">
+    <div *ngFor="let image of galleryOptions.images; let imageIndex = index" class="image"
+        [ngClass]="{'active': index === imageIndex}" [ngStyle]="{'background-image':'url(' + image.url + ')'}"
+        (click)="index = imageIndex">
+        <div class="shadow"></div>
+        <div class="label">
+            <div class="icon">
+                <i class="fas fa-walking"></i>
+            </div>
+            <div class="info">
+                <div class="main">Blonkisoaz</div>
+                <div class="sub">Omuke trughte a otufta</div>
+            </div>
+        </div>
+    </div>
+</div>
