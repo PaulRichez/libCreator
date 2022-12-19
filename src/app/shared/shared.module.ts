@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CodePreviewMultipleComponent } from './code-preview-multiple/code-preview-multiple.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { HighlightModule } from 'ngx-highlightjs';
-
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -11,8 +11,9 @@ import { HighlightModule } from 'ngx-highlightjs';
   ],
   imports: [
     CommonModule,
+    HighlightModule,
     MatTabsModule,
-    HighlightModule
+    MatCardModule,
   ],
   exports: [
     HighlightModule,

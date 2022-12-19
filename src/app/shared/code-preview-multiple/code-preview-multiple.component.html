@@ -1,5 +1,13 @@
-<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
-    <mat-tab *ngFor="let code of codes" label="code.file">
-        <pre><code [highlight]="code.code" [languages]="[code.lang]"></code></pre>
-    </mat-tab>
-</mat-tab-group>
+<mat-card>
+    <mat-card-content>
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+            <mat-tab *ngFor="let code of codes" [label]="code.fileName">
+                <pre><code [highlight]="code.code" [languages]="[code.lang]"></code></pre>
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card-content>
+    <mat-card-footer *ngIf="link" style="display: flex; justify-content: flex-end;">
+        <a [href]="link" target="_blank" style="display: flex;flex-direction: row; align-items:center">Lien github<img
+                src="assets/img/github-mark.png" alt="github link" width="24"></a>
+    </mat-card-footer>
+</mat-card>
