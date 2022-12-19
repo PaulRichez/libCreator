@@ -1,0 +1,18 @@
+nav {
+    background-color: #41729F;
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+
+    ul {
+        list-style: none;
+
+        li {
+            display: inline;
+            margin-right: 10px;
+        }
+    }
+    a {
+        color: white;
+    }
+}
