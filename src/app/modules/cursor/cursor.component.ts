@@ -6,6 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./cursor.component.scss']
 })
 export class CursorComponent {
+  usageCodeImport = `
+  import { NgCursorModule } from 'ng-cursor';
+  ...
+  imports: [
+    NgCursorModule,
+  }
+  `;
+
   usageCode = `
   <span ngCursor="pointer"[ngCursorImportant]="true">Pointer</span> <!-- cursor pointer with !important -->
   <span ngCursor="pointer!important">Pointer</span> <!-- same but without use the input cursorImportant -->
