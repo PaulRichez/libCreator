@@ -7,11 +7,13 @@ import { FormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { DynamicCursorComponent } from './components/dynamic-cursor/dynamic-cursor.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { HappyCursorComponent } from './components/happy-cursor/happy-cursor.component';
 
 @NgModule({
   declarations: [
     CursorComponent,
     DynamicCursorComponent,
+    HappyCursorComponent,
   ],
   imports: [
     NgCursorModule,

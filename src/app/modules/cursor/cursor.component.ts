@@ -11,7 +11,7 @@ export class CursorComponent {
   <span ngCursor="pointer!important">Pointer</span> <!-- same but without use the input cursorImportant -->
   <span ngCursor="url(assets/cursor/heart.svg)">heart</span> <!-- cursor from asset -->
   <span ngCursor="url(assets/cursor/heart.svg)!important">heart</span> <!-- cursor from asset && link can be used with !important too -->
-  <span ngCursor="url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png)">happy</span> <!-- cursor from link -->`;
+  <span ngCursor="url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg)">happy</span> <!-- cursor from link -->`;
 
   dynamicCode = [
     {
