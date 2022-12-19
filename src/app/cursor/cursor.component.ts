@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./cursor.component.scss']
 })
 export class CursorComponent {
-
+  constructor() {
+    console.log('rr')
+  }
 }

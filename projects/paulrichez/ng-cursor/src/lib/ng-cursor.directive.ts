@@ -1,7 +1,7 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[libNgCursor]'
+  selector: '[ngCursor]'
 })
 export class NgCursorDirective {
 
