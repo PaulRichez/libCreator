@@ -11,7 +11,7 @@ export class CursorComponent {
   ...
   imports: [
     NgCursorModule,
-  }
+  ]
   `;
 
   usageCode = `

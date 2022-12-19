@@ -1,24 +1,34 @@
-# NgCursor
+# Ng-Cusor
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+## Overview
 
-## Code scaffolding
+A simple Angular directive to choose the cursor css propertie
 
-Run `ng generate component component-name --project ng-cursor` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-cursor`.
-> Note: Don't forget to add `--project ng-cursor` or else it will be added to the default project in your `angular.json` file. 
+I recommend to use SVG file, not png
 
-## Build
+## Démo
 
-Run `ng build ng-cursor` to build the project. The build artifacts will be stored in the `dist/` directory.
+[Démo/doc](https://lib-creator.vercel.app/ng-cursor)
 
-## Publishing
+## Installation
+```
+npm i ng-cursor
+```
 
-After building your library with `ng build ng-cursor`, go to the dist folder `cd dist/ng-cursor` and run `npm publish`.
+``` ts
+  import { NgCursorModule } from 'ng-cursor';
+  ...
+  imports: [
+    NgCursorModule,
+  ]
+``` 
 
-## Running unit tests
+## Usage
+```html
+  <span ngCursor="pointer"[ngCursorImportant]="true">Pointer</span> <!-- cursor pointer with !important -->
+  <span ngCursor="pointer!important">Pointer</span> <!-- same but without use the input cursorImportant -->
+  <span ngCursor="url(assets/cursor/heart.svg)">heart</span> <!-- cursor from asset -->
+  <span ngCursor="url(assets/cursor/heart.svg)!important">heart</span> <!-- cursor from asset && link can be used with !important too -->
+  <span ngCursor="url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg)">happy</span> <!-- cursor from link -->
+```
 
-Run `ng test ng-cursor` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
