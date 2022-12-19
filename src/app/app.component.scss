@@ -2,7 +2,7 @@ nav {
     background-color: #41729F;
     padding: 5px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 
     ul {
         list-style: none;
@@ -12,7 +12,13 @@ nav {
             margin-right: 10px;
         }
     }
+
     a {
         color: white;
     }
+}
+
+#main {
+    margin: auto;
+    max-width: 900px;
 }

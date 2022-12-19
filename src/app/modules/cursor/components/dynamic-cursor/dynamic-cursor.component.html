@@ -1,0 +1,12 @@
+<div class="flex-row align-center">
+    <div [ngCursor]="dynamicCursor" class="dynamic-cursor">
+        <span>this element get the cursor : {{ dynamicCursor }}</span>
+    </div>
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="dynamicCursor">
+                <mat-option *ngFor="let cursor of cursors" [value]="cursor">{{ cursor }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>
