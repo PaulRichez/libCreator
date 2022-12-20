@@ -28,7 +28,7 @@ import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
           css: () => import('highlight.js/lib/languages/css'),
 
         },
-        themePath: 'node_modules/highlight.js/styles/dark.css',
+        themePath: 'node_modules/highlight.js/styles/atom-one-dark.css',
       }
     }
   ],
