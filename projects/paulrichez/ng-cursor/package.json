@@ -1,6 +1,6 @@
 {
   "name": "ng-cursor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0"
@@ -11,5 +11,15 @@
   "author": "Paul Richez",
   "repository": {
     "url": "https://github.com/PaulRichez/libCreator/tree/master/projects/paulrichez/ng-cursor"
-  }
+  },
+  "keywords": [
+    "ng cursor",
+    "ng-cursor",
+    "ngx-cursor",
+    "ngx cursor",
+    "cursor",
+    "angular cursor",
+    "cursor svg",
+    "cursor png"
+  ]
 }
