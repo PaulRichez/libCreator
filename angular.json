@@ -255,8 +255,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ngx-terminal/ng-package.json",
-            "preserveSymlinks": true
+            "project": "projects/ngx-terminal/ng-package.json"
           },
           "configurations": {
             "production": {
