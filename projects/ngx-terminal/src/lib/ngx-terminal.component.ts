@@ -7,6 +7,8 @@ import { ITerminalCommand } from 'easy-terminal/models/TerminalCommand.model';
   styleUrls: ['./ngx-terminal.component.scss']
 })
 export class NgxTerminalComponent implements AfterViewInit {
+  @Input() width: string = '100%';
+  @Input() height: string = '100%';
   @Input() window: any;
   @Input() welcome!: string;
   @Input() nativeCommands: boolean = false;
