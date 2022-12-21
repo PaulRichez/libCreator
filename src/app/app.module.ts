@@ -26,6 +26,8 @@ import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
           typescript: () => import('highlight.js/lib/languages/typescript'),
           xml: () => import('highlight.js/lib/languages/xml'),
           css: () => import('highlight.js/lib/languages/css'),
+          md: () => import('highlight.js/lib/languages/markdown'),
+
 
         },
         themePath: 'node_modules/highlight.js/styles/atom-one-dark.css',

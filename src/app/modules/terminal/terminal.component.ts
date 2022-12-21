@@ -57,4 +57,33 @@ export class TerminalComponent {
 `
     },
   ]
+
+  interfaces = `
+  #### Terminal Config
+  | name           | type             | default | desc                                                 |
+  | -------------- | ---------------- | ------- | ---------------------------------------------------- |
+  | window         | Object           | N/A     | Some style for the termianal                         |
+  | welcome        | String           | null    | Welcome message (first line)                         |
+  | elementHtml    | HTMLElement      | null    | div where you want the terminal                      |
+  | data-ps        | string           | $       | Char before command input                            |
+  | history        | boolean          | false   | If yes you can access history with arrow up and down |
+  | noEmptyCommand | boolean          | false   | If true cancel empty command                         |
+  | nativeCommands | boolean          | false   | Native commands are help and clear                   |
+  | customCommands | ITerminalCommand | N/A     | Pass you're commands here                            |
+
+  #### Window interface
+  | name      | type    | default        | desc                |
+  | --------- | ------- | -------------- | ------------------- |
+  | show      | boolean | false          | Show a window       |
+  | title     | string  | 'EasyTerminal' | Title of the window |
+  | bgColor   | string  | #198754        | Background color    |
+  | textColor | string  | white          | Text color          |
+
+  #### ITerminalCommand interface
+  | name   | type     | required | desc                      |
+  | ------ | -------- | -------- | ------------------------- |
+  | name   | string   | true     | Command name              |
+  | method | function | true     | function called           |
+  | help   | string   | true     | Text show on help command |
+`
 }
