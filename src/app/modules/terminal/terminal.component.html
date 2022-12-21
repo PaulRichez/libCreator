@@ -1,2 +1,19 @@
-<ngx-terminal [height]="'350px'" [width]="'100%'" [window]=" window" [nativeCommands]="true" [history]="true"
-    [noEmptyCommand]="true" [customCommands]="customCommands"></ngx-terminal>
+<div id="title">
+    <h1>ngx-terminal</h1>
+</div>
+<h2>Overview</h2>
+<p>A simple Angular terminal very light size ( use <a href="https://www.npmjs.com/package/easy-terminal"
+        target="_blank">easy-terminal</a> a non dependencies vanilla javascript terminal)</p>
+<h2>Installation</h2>
+<blockquote>
+    npm install ngx-terminal
+</blockquote>
+<p>Import module</p>
+<pre><code [highlight]="usageCodeImport" [languages]="['ts']"></code></pre>
+<h2>Usage</h2>
+<pre><code [highlight]="usageCode" [languages]="['xml']"></code></pre>
+<h2>Démo</h2>
+<app-demo-terminal></app-demo-terminal>
+<app-code-preview-multiple
+    [link]="'https://github.com/PaulRichez/libCreator/tree/master/src/app/modules/cursor/components/dynamic-cursor'"
+    [codes]="demoCode"></app-code-preview-multiple>

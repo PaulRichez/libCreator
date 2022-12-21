@@ -12,6 +12,7 @@ export class NgxTerminalComponent implements AfterViewInit {
   @Input() window: any;
   @Input() welcome!: string;
   @Input() nativeCommands: boolean = false;
+  @Input() 'data-ps'!: string;
   @Input() history: boolean = false;
   @Input() noEmptyCommand: boolean = false;
   @Input() customCommands: ITerminalCommand[] = [];
@@ -23,6 +24,7 @@ export class NgxTerminalComponent implements AfterViewInit {
       nativeCommands: this.nativeCommands,
       welcome: this.welcome,
       history: this.history,
+      "data-ps": this['data-ps'],
       noEmptyCommand: this.noEmptyCommand,
       customCommands: this.customCommands
     });
