@@ -1,12 +1,23 @@
 {
   "name": "ngx-terminal",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
-    "@angular/core": "^15.0.0"
+    "@angular/core": "^15.0.0",
+    "easy-terminal": "^1.1.3"
   },
   "dependencies": {
-    "easy-terminal": "^1.1.3",
     "tslib": "^2.3.0"
-  }
+  },
+  "author": "Paul Richez",
+  "repository": {
+    "url": "https://github.com/PaulRichez/libCreator/tree/master/projects/ngx-terminal"
+  },
+  "keywords": [
+    "ngx terminal",
+    "ngx-terminal",
+    "angular terminal",
+    "ng terminal",
+    "ng-terminal"
+  ]
 }

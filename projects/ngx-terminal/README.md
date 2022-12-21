@@ -1,24 +1,30 @@
-# NgxTerminal
+# Ngx-terminal
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+## Overview
 
-## Code scaffolding
+A simple Angular terminal very light size ( use [easy-terminal](https://www.npmjs.com/package/easy-terminal) a non dependencies vanilla javascript terminal)
 
-Run `ng generate component component-name --project ngx-terminal` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-terminal`.
-> Note: Don't forget to add `--project ngx-terminal` or else it will be added to the default project in your `angular.json` file. 
+## Démo
 
-## Build
+[Démo/doc](https://lib-creator.vercel.app/ngx-terminal)
 
-Run `ng build ngx-terminal` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
+```
+npm i ngx-terminal
+```
 
-## Publishing
+``` ts
+  import { NgxTerminalModule } from 'ngx-terminal';
 
-After building your library with `ng build ngx-terminal`, go to the dist folder `cd dist/ngx-terminal` and run `npm publish`.
+  imports: [
+    NgxTerminalModule,
+  ]
+``` 
 
-## Running unit tests
+## Usage
+```html
+  <ngx-terminal></ngx-terminal>
+```
 
-Run `ng test ngx-terminal` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Interfaces
+ see [easy-terminal](https://www.npmjs.com/package/easy-terminal)
