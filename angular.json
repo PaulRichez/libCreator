@@ -50,6 +50,7 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
+            "preserveSymlinks": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -254,7 +255,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ngx-terminal/ng-package.json"
+            "project": "projects/ngx-terminal/ng-package.json",
+            "preserveSymlinks": true
           },
           "configurations": {
             "production": {
