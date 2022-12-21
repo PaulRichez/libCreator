@@ -8,6 +8,9 @@
       ],
       "@paulrichez/ng-gallery-inline": [
         "dist/paulrichez/ng-gallery-inline"
+      ],
+      "ngx-terminal": [
+        "dist/ngx-terminal"
       ]
     },
     "baseUrl": "./",
