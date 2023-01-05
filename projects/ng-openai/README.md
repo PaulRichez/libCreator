@@ -1,24 +1,32 @@
-# NgOpenai
+# ng-openai
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+## Overview
 
-## Code scaffolding
+A simple Angular service for openai(chatGPT)
 
-Run `ng generate component component-name --project ng-openai` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-openai`.
-> Note: Don't forget to add `--project ng-openai` or else it will be added to the default project in your `angular.json` file. 
+## Démo
 
-## Build
+[Démo](https://stackblitz.com/edit/angular-ivy-jqxxxf)
 
-Run `ng build ng-openai` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
+```
+npm i npm install ng-openai
+```
 
-## Publishing
+``` ts
+import { NgOpenaiModule } from 'ng-openai';
 
-After building your library with `ng build ng-openai`, go to the dist folder `cd dist/ng-openai` and run `npm publish`.
+imports: [
+    NgOpenaiModule.forRoot('sk-XXXXXXXXXXXXXXXXXXXXXX'), // your API key here
+]
+``` 
 
-## Running unit tests
+## Usage
+```ts
+const completion = await this.ngOpenaiService.openai().createCompletion({
+    model: "text-davinci-002",
+    prompt: "Hello world",
+});
+console.log(completion.data.choices[0].text);
+```
 
-Run `ng test ng-openai` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
