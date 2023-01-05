@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { OpenaiRoutingModule } from './openai-routing.module';
 import { OpenaiComponent } from './openai.component';
 import { NgOpenaiModule } from 'projects/ng-openai/src/public-api';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { NgOpenaiModule } from 'projects/ng-openai/src/public-api';
   imports: [
     CommonModule,
     OpenaiRoutingModule,
+    SharedModule,
     NgOpenaiModule.forRoot('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'),
   ]
 })

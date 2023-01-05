@@ -8,5 +8,14 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "author": "Paul Richez",
+  "repository": {
+    "url": "https://github.com/PaulRichez/libCreator/tree/master/projects/ng-openai"
+  },
+  "keywords": [
+    "ng openai",
+    "angular openai",
+    "angular chatGPT"
+  ]
 }
