@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { OpenaiRoutingModule } from './openai-routing.module';
 import { OpenaiComponent } from './openai.component';
-import { NgOpenaiModule } from 'projects/ng-openai/src/public-api';
+import { NgOpenaiModule } from 'ng-openai';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 
