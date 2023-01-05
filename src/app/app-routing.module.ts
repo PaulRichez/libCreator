@@ -5,7 +5,8 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule) },
   { path: 'ng-cursor', loadChildren: () => import('./modules/cursor/cursor.module').then(m => m.CursorModule) },
-  { path: 'ngx-terminal', loadChildren: () => import('./modules/terminal/terminal.module').then(m => m.TerminalModule) }
+  { path: 'ngx-terminal', loadChildren: () => import('./modules/terminal/terminal.module').then(m => m.TerminalModule) },
+  { path: 'ng-openai', loadChildren: () => import('./modules/openai/openai.module').then(m => m.OpenaiModule) }
 ];
 
 @NgModule({

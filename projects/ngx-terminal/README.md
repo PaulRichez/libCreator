@@ -26,5 +26,5 @@ npm i ngx-terminal
   <ngx-terminal></ngx-terminal>
 ```
 
-### Interfaces
+## Interfaces
  see [easy-terminal](https://www.npmjs.com/package/easy-terminal)

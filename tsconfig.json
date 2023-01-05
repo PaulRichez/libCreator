@@ -12,6 +12,9 @@
       "@paulrichez/ng-gallery-inline": [
         "dist/paulrichez/ng-gallery-inline"
       ],
+      "ng-openai": [
+        "dist/ng-openai"
+      ],
       "ngx-terminal": [
         "dist/ngx-terminal"
       ]
