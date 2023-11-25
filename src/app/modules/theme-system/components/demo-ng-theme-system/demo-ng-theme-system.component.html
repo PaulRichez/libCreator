@@ -1,0 +1,13 @@
+<button mat-button [matMenuTriggerFor]="menu">Pick a theme</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="changeTheme('system')">System</button>
+  <button mat-menu-item (click)="changeTheme('dark')">Dark</button>
+  <button mat-menu-item (click)="changeTheme('light')">Light</button>
+</mat-menu>
+<div class="container" [ngClass]="themeValue">
+  <div>
+    <span>ThemeSystem is {{ themeSystem }}</span><br>
+    <span>Theme is {{ themeValue }}</span>
+    <span *ngIf="themeSelected == 'system'"> From theme system</span>
+  </div>
+</div>

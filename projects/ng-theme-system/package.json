@@ -1,0 +1,21 @@
+{
+  "name": "ng-theme-system",
+  "version": "0.0.2",
+  "peerDependencies": {
+    "@angular/common": "^15.0.0",
+    "@angular/core": "^15.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "author": "Paul Richez",
+  "repository": {
+    "url": "https://github.com/PaulRichez/libCreator/tree/master/projects/ng-theme-system"
+  },
+  "keywords": [
+    "ng theme system",
+    "angular theme system",
+    "angular theme",
+    "ngx theme system"
+  ]
+}

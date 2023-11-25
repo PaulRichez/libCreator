@@ -15,6 +15,9 @@
       "ng-openai": [
         "dist/ng-openai"
       ],
+      "ng-theme-system": [
+        "dist/ng-theme-system"
+      ],
       "ngx-terminal": [
         "dist/ngx-terminal"
       ]

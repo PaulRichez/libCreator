@@ -27,4 +27,9 @@ npm i ngx-terminal
 ```
 
 ## Interfaces
- see [easy-terminal](https://www.npmjs.com/package/easy-terminal)
+  | name           | type             | default | desc                                                 |
+  | -------------- | ---------------- | ------- | ---------------------------------------------------- |
+  | getSytemTheme         | function return strinng           | N/A     | return 'light' or 'dark'                        |
+  | isLightTheme        | function return boolean           | N/A    | return true if system theme is light                        |
+  | isDarkTheme    | function return boolean      | N/A    | return true if system theme is dark                    |
+  | listenSystemTheme        | Observable<'string'>      | N/A       |Observable which listen the change with boolean for initial value or not                            |
